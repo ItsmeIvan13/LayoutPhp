@@ -83,7 +83,7 @@ include('includes/header.php');
             var user = $('#userName').val();
             var pass =  $('#password').val();
 
-        
+
         $.ajax({
             url: 'loginFunction.php',
             type: 'POST',
@@ -109,7 +109,8 @@ include('includes/header.php');
                 else
                 {
                     if(res.status === 1)
-                    {
+                    {   
+                        //redirect to homePage
                         window.location.href='home.php';
                     }
 
