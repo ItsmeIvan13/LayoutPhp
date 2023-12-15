@@ -82,8 +82,8 @@ include('includes/header.php');
     
             var user = $('#userName').val();
             var pass =  $('#password').val();
-        
 
+        
         $.ajax({
             url: 'loginFunction.php',
             type: 'POST',
